@@ -14,7 +14,7 @@
 ##### 1.1 ติดตั้งซอร์ฟแวร์พื้นฐาน
 
 ```
-sudo apt install default-jre
+sudo apt install openjdk-8-jre
 sudo apt-get install apt-transport-https
 ```
 
