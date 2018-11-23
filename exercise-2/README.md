@@ -1,48 +1,48 @@
 #### Exercise2 Elasticsearch
 
-##### 1. REST API
+##### 1. การใช้งาน REST API
 
 ###### 1.1) show elasticsearch information
 ```
 curl -XGET 127.0.0.1:9200/
 ```
 
-##### 2. CAT API
+##### 2. การสใช้งาน CAT API
 [reference](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat.html)
 
-###### 2.1) show cat API function list
+###### 2.1) แสดงรายการคำสั่งของ CAT API 
 ```
 curl -XGET 127.0.0.1:9200/_cat
 ```
 
-###### 2.2) show cluster health
+###### 2.2) คำสั่งแสดงสถานะของ Elasticsearch cluster 
 ```
 curl 127.0.0.1:9200/_cat/health?v
 ```
 
-###### 2.3) show node list in cluster 
+###### 2.3) คำสั่งแสดงจำนวน node ภายใน cluster 
 ```
 curl 127.0.0.1:9200/_cat/nodes?v
 ```
 
-###### 2.4) show indices list
+###### 2.4) คำสั่งแสดงรายการ indices ภายใน cluster
 ```
 curl 127.0.0.1:9200/_cat/indices?v
 ```
 
-###### 2.5) show shades list
+###### 2.5) คำสั่งแสดงรายการ shades ภายใน cluster
 ```
 curl 127.0.0.1:9200/_cat/shards?v
 ```
 
-###### 2.6) show template
+###### 2.6) คำสั่งแสดง template ภายใน cluster
 ```
 curl 127.0.0.1:9200/_cat/templates?v
 ```
 
-###### 2.6-1) show logstash template
+###### 2.6-1) ทอลองคิวรี template ชื่อ logstash-index-template 
 ```
-curl 127.0.0.1:9200/_template/logstash?pretty=true
+curl 127.0.0.1:9200/_template/logstash-index-template?pretty=true
 ```
 
 
