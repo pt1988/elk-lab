@@ -5,7 +5,7 @@
 ##### 1.1 ดาวน์โหลดโปรเจคจาก Gitlab  
 ```
 git clone https://gitlab.com/pt1988/lab-elk.git
-cd elk-lab1/exercise-1
+cd lab-elk/exercise-1
 ```
 
 
