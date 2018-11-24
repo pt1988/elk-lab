@@ -80,7 +80,7 @@ sudo cp logstash-elasticsearch.conf /etc/logstash/conf.d/
 
 ##### 3.2) รันคำสั่งรีสตาร์ต logstash service ดังนี้
 ```
-systemctl restart logstash
+sudo systemctl restart logstash
 ```
 
 ##### 3.3) รันคำสั่งตรวจสอบสถานนะของโปรแกรม Logstash ดังนี้
@@ -92,3 +92,12 @@ systemctl status logstash
 ```
 tail /var/log/logstash/logstash-plain.log -n 20 
 ```
+ถ้าโปรแกรมทำงานได้ปกติจะ log ของ Logstash จะมีลักษณะดังนี้
+```
+[2018-11-24T19:32:53,814][INFO ][logstash.pipeline        ] Pipeline started successfully {:pipeline_id=>"main", :thread=>"#<Thread:0xd795dd1 run>"}
+[2018-11-24T19:32:53,969][INFO ][logstash.agent           ] Pipelines running {:count=>1, :running_pipelines=>[:main], :non_running_pipelines=>[]}
+[2018-11-24T19:32:54,014][INFO ][filewatch.observingtail  ] START, creating Discoverer, Watch with file and sincedb collections
+[2018-11-24T19:32:54,812][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+```
+
+แต่ถ้าโปรแกรมขัดข้อง log ของ Logstash ระบุสาเหตุของข้อผิดพลาด
