@@ -1,4 +1,4 @@
-lt ## Exercise 1 : Process web access log with logstash
+## Exercise 1 : Process web access log with logstash
 
 #### 1 ตั้งค่าพื้่นฐานของ
 
