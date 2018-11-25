@@ -10,11 +10,10 @@
 
 #### 1. ตั่งค่าและติดตั้งซอร์ฟแวร์พิ้นฐาน
 
-
 ##### 1.1 ติดตั้งซอร์ฟแวร์พื้นฐาน
 
 ```
-sudo apt install openjdk-8-jre
+sudo apt install openjdk-8-jre git -y
 sudo apt-get install apt-transport-https
 ```
 
