@@ -4,6 +4,7 @@ lt ## Exercise 1 : Process web access log with logstash
 
 ##### 1.1 ดาวน์โหลดโปรเจคจาก Gitlab  
 ```
+sudo apt-get install git  # for ubuntu
 git clone https://gitlab.com/pt1988/lab-elk.git
 cd lab-elk/exercise-1
 ```
